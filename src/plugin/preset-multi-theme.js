@@ -45,6 +45,7 @@ export function presetMultiTheme(themes) {
       mutilColorResolver('color', 'text', (c, theme) => theme.textColor.multi[c]),
       { autocomplete: '(text|color|c)-multi-$colors' },
     ],
+    // copy the opacity rule to override multi rule opacity var above
     [
       /^(?:text|color|c)-op(?:acity)?-?(.+)$/,
       ([, opacity]) => ({ '--un-text-opacity': h.bracket.percent.cssvar(opacity) }),
@@ -61,6 +62,7 @@ export function presetMultiTheme(themes) {
       mutilColorResolver('background-color', 'bg', (c, theme) => theme.backgroundColor.multi[c]),
       { autocomplete: 'bg-multi-$colors' },
     ],
+    // copy the opacity rule to override multi rule opacity var above
     [
       /^bg-op(?:acity)?-?(.+)$/,
       ([, opacity]) => ({ '--un-bg-opacity': h.bracket.percent.cssvar(opacity) }),
