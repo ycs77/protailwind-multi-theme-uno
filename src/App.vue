@@ -9,7 +9,7 @@
           :key="theme"
           @click="activeTheme = theme"
           :data-theme="theme"
-          className="rounded bg-multi-base hover:bg-opacity-75 px-5 py-2 text-multi-base font-semibold shadow transition-colors duration-75"
+          class="rounded bg-multi-base hover:bg-opacity-75 px-5 py-2 text-multi-base font-semibold shadow transition-colors duration-75"
         >
           {{ theme }}
         </button>
