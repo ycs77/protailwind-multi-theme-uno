@@ -47,7 +47,7 @@ export function presetMultiTheme(themes) {
     ],
     [
       /^(?:text|color|c)-op(?:acity)?-?(.+)$/,
-      ([, opacity]) => ({ '--un-text-opacity': h.bracket.percent(opacity) }),
+      ([, opacity]) => ({ '--un-text-opacity': h.bracket.percent.cssvar(opacity) }),
       { autocomplete: '(text|color|c)-(op|opacity)-<percent>' },
     ],
   ]
@@ -63,7 +63,7 @@ export function presetMultiTheme(themes) {
     ],
     [
       /^bg-op(?:acity)?-?(.+)$/,
-      ([, opacity]) => ({ '--un-bg-opacity': h.bracket.percent(opacity) }),
+      ([, opacity]) => ({ '--un-bg-opacity': h.bracket.percent.cssvar(opacity) }),
       { autocomplete: 'bg-(op|opacity)-<percent>' },
     ],
   ]
