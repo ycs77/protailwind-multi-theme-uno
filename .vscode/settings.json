@@ -1,5 +1,6 @@
 {
   "unocss.underline": true,
+  "unocss.autocomplete.matchType": "fuzzy",
   "editor.quickSuggestions": {
     "strings": false
   }
